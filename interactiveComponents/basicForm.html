@@ -1,0 +1,40 @@
+		<form>
+				<section>
+					<fieldset>
+						<legend>User data</legend>
+						<label for="firsName">
+							<span id="firstNameErr"></span>
+							First Name: * <strong>This means that is required <abbr aria-required="true">*</abbr></strong>
+						</label>
+						<input id="firstName" type="text" value="YourName" />
+
+						<label for="lastName">
+							<span id="lastNameErr"></span>
+							Last Name: *
+						</label>
+						<input id="lastName" type="text" value="Surname" />
+
+						<label for="e-mail">
+							Email:<span id="mailErr"></span>
+						</label>
+						<input id="e-mail" name="user-mail" type="email" value="anybody@example.com" />
+
+					<ul>
+						<content select="Country">
+					<label for="firstAddress">
+						First Adrress <span id="addrErr"></span>
+					</label>						
+						<input type="text" id="firstAddress" placeholder="Strret, number..." />
+
+						<label for="stateProv">
+							State/Province <span id="stateErr"></span>
+						</label>
+							<input type="text"  id="stateProv" placeholder="State.."/>
+							<select id="states-list" tabindex="0" contextmenu="SelectState">
+
+							</select>
+						</content>
+					</ul>
+					</fieldset>
+				</section>
+			</form>
