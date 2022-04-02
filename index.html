@@ -1,0 +1,86 @@
+ <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, max-zoom-scale=6" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="author" content="Daniel Crespo" />
+	<meta http-equiv="content-type" content="*/*" />
+	<title>Login Page</title>
+	<link href="css/styles.css" rel="stylesheet" />
+	<link href="/assets/css/main.css" rel="stylesheet" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+	<script src="assets/scripts/integrity.js" async crossorigin="anonymous" class="linked-files" type="text/javascript"></script>
+
+	<div id="page-header">
+		<header id="login-header">
+			<h1>Codemaniacs - NFTs Website</h1>
+		</header>
+	</div>
+
+	<div class="main">
+		<nav class="menu-side">
+			<aside id="menu-links">
+				<p class="menu-auth">Menu</p>
+				<menu id="links-content">
+					<ul class="menu-list">
+						<li>
+							<a href="/docs/index.html">
+								Docs
+							</a>
+						</li>
+						<li>
+							<a href="/index.html">
+								About
+							</a>
+						</li>
+					</ul>
+				</menu>
+				<nav class="menu-auth" id="idp-link">
+				</nav>
+			</aside>
+		</nav>
+
+
+		<div id="logForm">
+			<form title="authForm" accept-charset="utf-8" action="/" autocomplete="on" method="post" name="authForm" target="_self">
+
+				<p>
+					<label class="form-label" id="user" for="user">Username</label>
+					<span id="errorName"></span>
+					<input autocomplete="on" formmethod="get" capture accept="*/*" form="authForm" name="user" id="name" type="text" placeholder="Username.." />
+				</p><br />
+
+				<p>
+					<label id="email" class="form-label" for="mail">Email</label>
+					<span id="errorMail"></span>
+					<input name="mail" id="mail" type="email" placeholder="mail..." accept="*/*" autocomplete="on" capture value="" />
+				</p><br />
+
+				<p>
+					<label class="form-label" id="pass" for="passwd">Password</label>
+					<span id="errorPasswd"></span>
+					<input name="passwd" id="passwd" type="password" placeholder="Password..." autocomplete="on" alt="password" autofocus formaction="/api/content-get" formmethod="get" />
+				</p><br />
+
+				<p>
+					<button id="submmit" onclick="return userAuth(this.form)">Submmit</button>
+				</p>
+			</form>
+		</div>
+	</div>
+
+	<div class="user" id="userInfo">
+	</div>
+
+	<script src="js/navbar.js" crossorigin="anonymous" class="linked-files"></script>
+	<script src="/assets/dyn-cont/menu.js" crossorigin="anonymous" class="linked-files"></script>
+	<script src="/api/app.js" crossorigin="anonymous" class="linked-files"></script>
+</body>
+
+</html>
